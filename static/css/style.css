@@ -1,0 +1,122 @@
+/*
+    Main style
+*/
+.logo-image {
+    height: 50px;
+    overflow: hidden;
+    display: block;
+    float: left;
+}
+
+/*
+    SSL style
+*/
+.ssl-container {float:right;}
+.ssl {display:block;float:right;font-size:24px;background: #EFEFEF;padding: 14px;border-radius: 35px;}
+.ssl-text {display:block;float:right;padding:10px 10px 0 10px;color:#555;text-align:center;}
+.step {background:#eee;font-size:1em;color:#ccc;padding:15px;font-size:1.25em;}
+.step.active {color:#3C763D;}
+.step .caret {position:absolute;margin:0;color:#eee;opacity:1.0;}
+.step .caret.right {right:1px;top:0px;border-top:27px solid transparent;border-bottom:28px solid transparent;border-left:30px solid;}
+.step .caret.bottom {bottom:-15px;left:35%;border-top:15px solid;border-right:50px solid transparent;border-left:50px solid transparent;}
+@media(max-width:991px) {
+    .step {text-align:center;margin-top:20px;height:80px;}
+    .step .caret.right {top:20px;border-top:40px solid transparent;border-bottom:40px solid transparent;}
+}
+@media(max-width:767px) {
+    .step {height:auto;}
+    .ssl-container {float:none;margin:0 auto;width:220px;}
+}
+@media(min-width:768px) {
+    .step {margin-right:20px;}
+}
+
+/*
+    Select plan
+*/
+@import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css");
+
+.panel-pricing {
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+}
+.panel-pricing:hover {
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+}
+.panel-pricing .panel-heading {
+    padding: 20px 10px;
+}
+.panel-pricing .panel-heading .fa {
+    margin-top: 10px;
+    font-size: 58px;
+}
+.panel-pricing .list-group-item {
+    color: #777777;
+    border-bottom: 1px solid rgba(250, 250, 250, 0.5);
+}
+.panel-pricing .list-group-item:last-child {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.panel-pricing .list-group-item:first-child {
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+.panel-pricing .panel-body {
+    background-color: #f0f0f0;
+    font-size: 30px;
+    color: #777777;
+    padding: 20px;
+    margin: 0px;
+}
+
+/*
+    Form style
+*/
+
+.credit-card-box .panel-title {
+    display: inline;
+    font-weight: bold;
+}
+.credit-card-box .form-control.error {
+    border-color: red;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(255,0,0,0.6);
+}
+.credit-card-box label.error {
+    font-weight: bold;
+    color: red;
+    padding: 2px 8px;
+    margin-top: 2px;
+}
+.credit-card-box .payment-errors {
+    font-weight: bold;
+    color: red;
+    padding: 2px 8px;
+    margin-top: 2px;
+}
+.credit-card-box label {
+    display: block;
+}
+/* The old "center div vertically" hack */
+.credit-card-box .display-table {
+    display: table;
+}
+.credit-card-box .display-tr {
+    display: table-row;
+}
+.credit-card-box .display-td {
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+}
+/* Just looks nicer */
+.credit-card-box .panel-heading img {
+    min-width: 180px;
+}
+
+/*
+    Checkout style
+*/
+
